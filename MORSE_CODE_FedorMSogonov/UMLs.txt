@@ -1,0 +1,18 @@
++-------------------+          		+------------------------+          +-------------------+
+|   MorseCodeTree   |          		|  MorseCodeConverter    |          |     TreeNode      |
++-------------------+          		+------------------------+          +-------------------+
+| - root: TreeNode  |          		| - mct: MorseCodeTree    |         | - data: T         |
++-------------------+          		+------------------------+          | - left: TreeNode  |
+| + MorseCodeTree() |          		| + printTree(): String  |          | - right: TreeNode |
+| + getRoot(): TreeNode |      		| + convertToEnglish(    |          | + TreeNode(dataNode: T) |
+| + setRoot(newNode: TreeNode) | 	|   phrase: String): String |       | + TreeNode(node: TreeNode<T>) |
+| + insert(code: String,       | 	| + convertToEnglish(    |          | + setData(x: T): void |
+|   result: String): void       | 	|   codeFile: File): String |       | + getData(): T       |
+| + fetch(code: String): String | 	| + convertToEnglish(    |          | + setLeft(x: TreeNode<T>): void |
+| + delete(data: String): MorseCodeTree|| codeFile: File): String |	    | + getLeft(): TreeNode<T> |
+| + update(): MorseCodeTree|     	+------------------------+          | + setRight(x: TreeNode<T>): void |
+| + buildTree(): void |                                                     | + getRight(): TreeNode<T> |
+| + toArrayList(): ArrayList<String> |                              	    +-------------------+
+| + LNRoutputTraversal(root: TreeNode, list: ArrayList<String>): void |
++-------------------+
+
